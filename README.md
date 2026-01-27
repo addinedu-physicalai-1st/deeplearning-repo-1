@@ -64,7 +64,7 @@
 
 ```bash
 # 저장소 복제
-git clone [https://github.com/bigvlue/local_project.git](https://github.com/bigvlue/local_project.git)
+git clone https://github.com/addinedu-physicalai-1st/deeplearning-repo-1.git
 
 # 필수 라이브러리 설치
 pip install -r requirements.txt
