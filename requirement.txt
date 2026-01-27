@@ -1,0 +1,18 @@
+# --- 핵심 비전 및 AI 라이브러리 ---
+ultralytics         # YOLOv8/v11 모델 구동
+opencv-python       # 영상 처리 및 GUI 출력
+numpy               # 수치 연산 및 벡터 처리
+pandas              # 데이터프레임 처리 및 CSV 관리
+
+# --- 머신러닝 및 데이터 분석 ---
+scikit-learn        # Random Forest 모델 및 검증 도구
+joblib              # 학습된 모델(.pkl) 저장 및 로드
+matplotlib          # 정확도 및 혼동 행렬 시각화
+seaborn             # 데이터 시각화 고도화
+
+# --- 데이터베이스 및 유틸리티 ---
+mysql-connector-python  # MySQL 서버 연동
+python-dotenv       # DB 접속 정보 등 환경 변수 관리 (보안)
+
+# --- (선택) LSTM 도입 시 필요 ---
+# tensorflow          # 딥러닝 모델 구축 시 주석 해제
