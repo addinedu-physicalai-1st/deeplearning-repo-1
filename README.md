@@ -67,7 +67,7 @@
 git clone https://github.com/addinedu-physicalai-1st/deeplearning-repo-1.git
 
 # 필수 라이브러리 설치
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 # 데이터 추출 및 학습 실행
 python unified_extractor.py  # 데이터 수집
