@@ -7,7 +7,7 @@ torchvision==0.24.1
 scikit-learn==1.8.0
 joblib==1.5.3
 
-# [UI & Visualization - 충돌 방지를 위해 headless 적용]#
+# [UI & Visualization - 충돌 방지를 위해 headless 적용]
 PyQt5==5.15.11
 opencv-python-headless==4.13.0.90
 matplotlib==3.10.8
