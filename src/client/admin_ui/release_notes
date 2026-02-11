@@ -1,0 +1,5 @@
+1. event_logs 테이블에 accuracy 컬럼 추가
+2. database_models.py 수정 (accuracy 파라미터)
+3. monitoring_page.py 수정 (accuracy 저장)
+4. dashboard_page.py 수정 (정상 탐지율 표시)
+5. 뷰 재생성: v_event_details (accuracy 포함)
