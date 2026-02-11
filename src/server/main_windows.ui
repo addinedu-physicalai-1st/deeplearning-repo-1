@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AI Care - 서버 (VMS)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="menu_area">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>44</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>44</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1f1f1f; color: #e0e0e0;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+     <layout class="QHBoxLayout" name="menuLayout">
+      <item>
+       <widget class="QLabel" name="menu_label">
+        <property name="text">
+         <string>메뉴</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #e0e0e0; font-weight: bold;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignVCenter|Qt::AlignLeft</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="menu_spacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QToolButton" name="manage_menu_button">
+        <property name="text">
+         <string>관리</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #e0e0e0; font-weight: bold; background-color: #2b2b2b; border: 1px solid #3a3a3a; padding: 4px 10px; border-radius: 4px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="contentLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="device_list_panel">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #1c1c1c; color: #dcdcdc;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <layout class="QVBoxLayout" name="deviceListLayout">
+         <item>
+          <widget class="QLabel" name="device_list_label">
+           <property name="text">
+            <string>status | index_no | user_id | name | phone</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-weight: bold; color: #e0e0e0;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="device_list_widget">
+           <property name="styleSheet">
+            <string notr="true">background-color: #242424; color: #e0e0e0; border: 1px solid #2f2f2f;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="rightLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+        <widget class="QFrame" name="grid_area">
+         <property name="styleSheet">
+          <string notr="true">background-color: #121212;</string>
+         </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QGridLayout" name="grid_layout">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="grid_placeholder">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>N × N 격자타일 구성가능</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #1b5e20; font-weight: bold;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+        <widget class="QFrame" name="event_list_panel">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>120</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>200</height>
+           </size>
+          </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #1c1c1c; color: #e0e0e0;</string>
+         </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QVBoxLayout" name="eventListLayout">
+           <item>
+          <widget class="QLabel" name="event_list_label">
+             <property name="text">
+              <string>이벤트 수신 리스트</string>
+             </property>
+             <property name="styleSheet">
+            <string notr="true">color: #e0e0e0; font-weight: bold;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+          <widget class="QListWidget" name="event_list_widget">
+             <property name="styleSheet">
+            <string notr="true">background-color: #242424; color: #e0e0e0; border: 1px solid #2f2f2f;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
