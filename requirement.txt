@@ -9,6 +9,7 @@ joblib==1.5.3
 
 # [UI & Visualization - 충돌 방지를 위해 headless 적용]
 PyQt6==6.10.2
+PyQt6-Charts==6.10.0
 PyMySQL==1.1.2
 opencv-python-headless==4.13.0.90
 matplotlib==3.10.8
@@ -34,3 +35,4 @@ pydantic==2.12.5
 starlette==0.50.0
 anyio==4.12.1
 bcrypt==5.0.0
+pipeline==0.1.0
